@@ -19,7 +19,12 @@ console.log('hello world')
  * Example Output: n/a
  */
 
-// TODO: ADD CODE HERE
+var name;
+name = "kevin";
+console.log(name)
+
+
+ // TODO: ADD CODE HERE
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -31,6 +36,16 @@ console.log('hello world')
  *
  * Example Output: "Elizabeth Thompson"
  */
+
+var first;
+var last;
+
+first = "Kevin";
+last = "Smith";
+
+console.log(first + " " + last)
+
+
 
 // TODO: ADD CODE HERE
 
@@ -45,6 +60,18 @@ console.log('hello world')
  *
  * Example Output: "$49.90"
  */
+
+ var price;
+ var quantity;
+ var total;
+
+ price = 9.98;
+ quantity = 2;
+ total = price*quantity;
+
+ console.log(Math.round(total).toFixed(2));
+
+
 
 // TODO: ADD CODE HERE
 
@@ -62,6 +89,19 @@ console.log('hello world')
  * Example Output: "Aww! It's not sunny outside"
  */
 
+var weather;
+var message;
+
+weather = "rainy"; 
+
+if (weather === "sunny") {
+    message = ("Yay, its sunny outside!")
+}
+else{
+    message = ("Aww! its not sunny outside")
+}
+console.log(message);
+
 // TODO: ADD CODE HERE
 
 /* Challenge #5
@@ -77,6 +117,12 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+function myfunction() {
+    return "hello, you beautiful person"
+}
+
+console.log(myfunction());
+
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -87,6 +133,12 @@ console.log('hello world')
  *
  * Example Output: "I called an arrow function!"
  */
+
+const myArrowFunction = () => {
+    return "hello, you beautiful person"
+}
+
+console.log(myArrowFunction);
 
 // TODO: ADD CODE HERE
 
@@ -101,6 +153,13 @@ console.log('hello world')
  *
  * Example Output: "WHY AM I SCREAMING"
  */
+
+
+ function stringToUpper(str) {
+     return str.toUpperCase();
+ }
+
+ console.log(stringToUpper("hey you"))
 
 // TODO: ADD CODE HERE
 
@@ -119,4 +178,13 @@ console.log('hello world')
  * Example Output: 2, 10, 20
  */
 
+ function multiplyByTwo (number) {
+     return number * 2;
+ }
+
+let num1 = multiplyByTwo(1);
+let num2 = multiplyByTwo(5);
+let num3 = multiplyByTwo(10);
+
+ console.log(num1,  num2, num3);
 // TODO: ADD CODE HERE
